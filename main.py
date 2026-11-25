@@ -39,17 +39,20 @@ machine does not merely inconvenience the speaker, it *accuses* them --
 of stealing groceries they already paid for. That accusation is the
 engine of the rant. Every sentence escalates it:
 
-1. "The self-checkout just accused me of stealing my own groceries."
+1. "The self-checkout accused me of stealing my own groceries."
    -- the premise in one sentence, and the contradiction (stealing your
-   OWN groceries) is the joke's core.
+   OWN groceries) is the joke's core. No "just": the accusation is
+   stated flat, which makes it land harder.
 2. "'Unexpected item in the bagging area.'" -- the machine's own words,
    quoted verbatim. Anyone who has used a self-checkout has heard this
    exact sentence, so the rant starts from a shared memory, not an
    explanation.
-3. "Unexpected? I scanned it. I paid for it. I put it where you told me
-   to put it." -- three short denials in a row, each one true, each one
-   making the machine look more ridiculous. The rhythm is the rant's
-   anger: short, staccato, exasperated.
+3. "Unexpected? I scanned it. I paid for it. I put it exactly where
+   you told me to put it." -- three short denials in a row, each one
+   true, each one making the machine look more ridiculous. "Exactly"
+   is the exasperated word: the speaker did everything right, to the
+   letter, and is still a suspect. The rhythm is the rant's anger:
+   short, staccato, exasperated.
 4. "Now a red light is flashing, a stranger has to come and clear me,
    and I'm standing here like a shoplifter holding a bag of carrots I
    legally own." -- the punchline lands on the most undignified image
@@ -58,6 +61,11 @@ engine of the rant. Every sentence escalates it:
    least glamorous grocery imaginable, which is exactly why the
    accusation is absurd. "I legally own" is the speaker insisting on
    a fact nobody should ever have to insist on.
+5. "Carrots. The least stealable food on earth." -- a second laugh
+   beat that doubles down on the punchline instead of explaining it.
+   It reframes the whole scene: not a tense standoff with a machine,
+   but a grown adult being treated as a criminal over the one food
+   nobody has ever stolen. One fragment, one sentence, no wasted words.
 
 The anger feels shared rather than performed because the speaker is not
 shouting about how angry they are; they are calmly listing facts that
@@ -109,12 +117,13 @@ CANDIDATES = [
     {
         "name": "self-checkout",
         "text": (
-            "The self-checkout just accused me of stealing my own groceries. "
+            "The self-checkout accused me of stealing my own groceries. "
             "'Unexpected item in the bagging area.' Unexpected? I scanned it. "
-            "I paid for it. I put it where you told me to put it. Now a red "
-            "light is flashing, a stranger has to come and clear me, and I'm "
-            "standing here like a shoplifter holding a bag of carrots I "
-            "legally own."
+            "I paid for it. I put it exactly where you told me to put it. "
+            "Now a red light is flashing, a stranger has to come and clear "
+            "me, and I'm standing here like a shoplifter holding a bag of "
+            "carrots I legally own. Carrots. The least stealable food on "
+            "earth."
         ),
         # c1 on-topic rant, c2 actually funny, c3 specific/concrete,
         # c4 sharp/economical, c5 freshness. Weights 5/4/3/2/1.
